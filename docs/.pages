@@ -8,7 +8,6 @@ nav:
     - nmap
     - python
     - tryhackme
-  - tools
-  - Cheatsheet: cheatsheet
+  - Tools & Cheatsheets: tools
   - Blog: blog
   - Tags: tags.md
