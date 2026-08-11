@@ -9,7 +9,7 @@ Focuses on explaining both the technical execution and the thinking process behi
 ## Articles
 
 - [Hello World](posts/hello-world.md)
-- [FTP Enumeration to Exploitation (vsFTPd 2.3.4)](posts/FTP Enumeration to Exploitation (vsFTPd 2.3.4).md)
+- [FTP Enumeration to Exploitation (vsFTPd 2.3.4)](<posts/FTP Enumeration to Exploitation (vsFTPd 2.3.4).md>)
 
 Click a title to open the full article.
 
