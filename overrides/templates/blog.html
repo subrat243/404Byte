@@ -1,0 +1,42 @@
+{#-
+  Override the default blog page layout to show the blog index in the left sidebar.
+-#}
+{% extends "main.html" %}
+{% block container %}
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner md-grid">
+      <aside class="md-sidebar md-sidebar--blog" data-md-component="sidebar" data-md-type="navigation">
+        <div class="md-sidebar__scrollwrap">
+          <div class="md-sidebar__inner">
+            <nav class="md-nav md-nav--primary">
+              <div class="md-nav__title md-nav__container">
+                <span class="md-nav__link">
+                  {{ lang.t("blog") }}
+                </span>
+              </div>
+              <ul class="md-nav__list">
+                {% for post in posts %}
+                  <li class="md-nav__item">
+                    <a href="{{ post.url | url }}" class="md-nav__link">
+                      {{ post.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </aside>
+      <main class="md-content__inner md-typeset">
+        <header class="md-typeset">
+          {{ page.content }}
+        </header>
+        {% if pagination %}
+          {% block pagination %}
+            {% include "partials/pagination.html" %}
+          {% endblock %}
+        {% endif %}
+      </main>
+    </div>
+  </div>
+{% endblock %}

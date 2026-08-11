@@ -54,6 +54,8 @@ plugins:
       post_date_format: long
       post_url_format: "{slug}"
       authors: true
+      archive: false
+      categories: false
       pagination_per_page: 5
   - tags:
       tags_file: tags.md
