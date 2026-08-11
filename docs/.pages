@@ -1,6 +1,7 @@
 nav:
   - Home: index.md
   - Notes:
+    - Overview: notes
     - bash
     - ejpt-v2
     - linux-cli
